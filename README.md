@@ -11,8 +11,8 @@ est appelé pour mettre à jour la valeur, et cette valeur est utilisée pour
 filtrer la liste des produits. Et grâce à cela, le filtrage se fait dynamiquement
 dès que l'utilisateur tape une lettre.
 Voici deux exemples qui montrent la recherche des deux produits(ice cream , kiwi):
-<img src="tp-react-hooks/captures/Captureex1.1icecream.png">
-<img src="tp-react-hooks/captures/Captureex1.1kiwi.png">
+<img src="tp-react-hooks/captures/Captureex1.1icecream.png" width="300">
+<img src="tp-react-hooks/captures/Captureex1.1kiwi.png" width="300">
 <h4>1.2 Implémentation du debounce dans la recherche:</h4>
 Pour améliorer la performance, on a implémenté un système de debounce afin d’éviter
 la répétition de la recherche qu'elle fasse à chaque frappe du clavier. On a utilisé un
@@ -20,7 +20,7 @@ setTimeout combiné à useEffect pour attendre quelques millisecondes après que
 l’utilisateur finit de taper avant de lancer la recherche.
 Voici un exemple qui montre l'effet d'eviter la répétition lors de la recherche d'eggs.Comme on peut voir dans la console,lorsqu'on comemence
 à taper les lettres, ils se sont stockés dans la valeur debounce jusqu'à ce qu'on termine de taper le produit recherché, cela juste pour éviter la recherche à chaque fois.
-<img src="tp-react-hooks/captures/Captureex1.2.png">
+<img src="tp-react-hooks/captures/Captureex1.2.png" width="300">
 
 <h3>Exercice 2 : Context et Internationalisation</h3>
 <h4>2. Création du LanguageContext et l'ajout du sélecteur de langue:</h4>
@@ -28,8 +28,8 @@ Voici un exemple qui montre l'effet d'eviter la répétition lors de la recherch
 LanguageContext permet de gérer la langue de l’interface d'une manière globale dans l’application (français ou anglais).
 On a utilisé useContext(LanguageContext) dans ProductSearch pour récupérer la langue actuelle, et on a affiché le placeholder du champ de recherche ainsi que le mot "Prix" dans la langue correspondante (fr ou en).
 L'exemple suivant montre le changement de la langue lorsqu'on selectionne la langue francaise et la langue d'anglais.
-<img src="tp-react-hooks/captures/Captureex2languefrancais.png">
-<img src="tp-react-hooks/captures/Captureex2langueanglais.png">
+<img src="tp-react-hooks/captures/Captureex2languefrancais.png" width="300">
+<img src="tp-react-hooks/captures/Captureex2langueanglais.png"width="300">
 <h5>Difficulté rencontrée :</h5>
 
 Au début, j’ai oublié d’englober mon application dans le LanguageContext.Provider, donc la valeur language était undefined. Une fois corrigé, tout est bien fonctionné.
