@@ -18,7 +18,7 @@ Voici un exemple qui montre l'effet d'eviter la répétition lors de la recherch
 LanguageContext permet de gérer la langue de l’interface d'une manière globale dans l’application (français ou anglais).
 On a utilisé useContext(LanguageContext) dans ProductSearch pour récupérer la langue actuelle, et on a affiché le placeholder du champ de recherche ainsi que le mot "Prix" dans la langue correspondante (fr ou en). L'exemple suivant montre le changement de la langue lorsqu'on selectionne la langue francaise et la langue d'anglais.
 <img src="tp-react-hooks/captures/Captureex2languefrancais.png" width="600">
-<img src="tp-react-hooks/captures/Captureex2langueanglais.png"width="600">
+<img src="tp-react-hooks/captures/Captureex2langueanglais.png" width="600">
 <h5>Difficulté rencontrée :</h5>
 
 Au début, j’ai oublié d’englober mon application dans le LanguageContext.Provider, donc la valeur language était undefined. Une fois corrigé, tout est bien fonctionné.
