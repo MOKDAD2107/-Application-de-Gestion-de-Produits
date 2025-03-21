@@ -16,8 +16,7 @@ Voici un exemple qui montre l'effet d'eviter la répétition lors de la recherch
 <h4>2. Création du LanguageContext et l'ajout du sélecteur de langue:</h4>
 
 LanguageContext permet de gérer la langue de l’interface d'une manière globale dans l’application (français ou anglais).
-On a utilisé useContext(LanguageContext) dans ProductSearch pour récupérer la langue actuelle, et on a affiché le placeholder du champ de recherche ainsi que le mot "Prix" dans la langue correspondante (fr ou en).
-L'exemple suivant montre le changement de la langue lorsqu'on selectionne la langue francaise et la langue d'anglais.
+On a utilisé useContext(LanguageContext) dans ProductSearch pour récupérer la langue actuelle, et on a affiché le placeholder du champ de recherche ainsi que le mot "Prix" dans la langue correspondante (fr ou en). L'exemple suivant montre le changement de la langue lorsqu'on selectionne la langue francaise et la langue d'anglais.
 <img src="tp-react-hooks/captures/Captureex2languefrancais.png" width="600">
 <img src="tp-react-hooks/captures/Captureex2langueanglais.png"width="600">
 <h5>Difficulté rencontrée :</h5>
@@ -29,7 +28,7 @@ Au début, j’ai oublié d’englober mon application dans le LanguageContext.P
 
 Dans cet exercice,on a utilisé deux hooks personnalisés : useDebounce et useLocalStorage. Le hook useDebounce a déjà été expliqué précédemment, il nous permet d'améliorer les performances de la recherche en évitant les appels trop fréquents lors de la saisie. Quant au hook useLocalStorage, il nous a permis de stocker la langue choisie par l’utilisateur dans le localStorage du navigateur,et grâce à cela, la langue reste
 sauvegardée même après un rafraîchissement de la page. En testant dans la console, on a bien retrouvé la valeur "fr" enregistrée, ce qui confirme le bon fonctionnement du hook.
-<img src="tp-react-hooks/captures/Captureex3hooklocal.png">
+<img src="tp-react-hooks/captures/Captureex3hooklocal.png" width="600">
 
 <h3>Exercice 4 : Gestion Asynchrone et Pagination</h3>
 <h4>4. L'ajout du bouton de rechargement et l'implémentation de la pagination:</h4>
