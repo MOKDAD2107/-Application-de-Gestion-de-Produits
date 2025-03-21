@@ -1,4 +1,4 @@
-#TP React Hooks - Application de Gestion de Produits
+<h1>TP React Hooks - Application de Gestion de Produits</h1>
 <h3>Exercice 1 : État et Effets</h3>
 <h4>1.1 Modification du composant ProductSearch pour l'utiliser dans la recherche:</h4>
 
